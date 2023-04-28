@@ -14,7 +14,7 @@ router.get("/images/images-list",(req,res)=>{
   res.send({
     images_list:[...valid_asset_Files["jpeg"],...valid_asset_Files["jpg"],...valid_asset_Files["png"]].filter((v)=>{
       if(typeof v != 'string') return false;
-      if(String(v).includes("810_")) return true;
+      if(String(v).includes("810_") && String(v).includes("Fotor")) return true;
   
       return false
   })

@@ -666,6 +666,7 @@ video {
   position: relative;
   align-items: center;
   justify-content: center;
+  min-height: 300px;
 }
 
 .container #root{
