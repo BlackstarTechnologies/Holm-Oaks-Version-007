@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    position: relative;
+    align-items: center;   
+    justify-content: center;
+}
+
+.container #root{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-image {
+    max-width:500px;
+    margin: 2rem;
+    max-height:500px;
+}
+.gallery-image:hover{
+    scale: 1.25x;
+}

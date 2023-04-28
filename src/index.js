@@ -3,6 +3,7 @@ const filesList = require("./utils/fetchFiles");
 const { splitUrl } = require("./utils/001");
 const fs = require("fs");
 const { Log } = require("./process.handlers");
+const { getGallery } = require("./utils/render_gallery");
 const router = express.Router();
 
 router.use("*", (req, res, callNext) => {
@@ -23,6 +24,7 @@ router.get("*", (req, res, callNext) => {
     if (valid_files) {
       for (let k of valid_files) {
         if (k.endsWith(split.last)) {
+          res.setTimeout(1000*60*60)
           res.type(split.ext);
           res.send(fs.readFileSync(k));
           return;
@@ -71,6 +73,16 @@ router.get("/*", (req, res, callNext) => {
   }
 });
 
+
+router.get("/Gallery/", (req,res, callNext)=>{
+  res.setTimeout(1000*60*60)
+  res.type("html")
+    res.send(getGallery())
+    console.log("/Gallery/ called")
+
+  // callNext()
+})
 router.use("/api", require("./api"));
 
 module.exports = router;
+

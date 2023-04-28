@@ -1,0 +1,12 @@
+@import "./tailwind.css";
+@import "./scss/index.css";
+
+
+
+.blackstar-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
