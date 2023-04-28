@@ -74,14 +74,14 @@ router.get("/*", (req, res, callNext) => {
 });
 
 
-router.get("/Gallery/", (req,res, callNext)=>{
-  res.setTimeout(1000*60*60)
-  res.type("html")
-    res.send(getGallery())
-    console.log("/Gallery/ called")
+// router.get("/Gallery/", (req,res, callNext)=>{
+//   res.setTimeout(1000*60*60)
+//   res.type("html")
+//     res.send(getGallery())
+//     console.log("/Gallery/ called")
 
-  // callNext()
-})
+//   // callNext()
+// })
 router.use("/api", require("./api"));
 
 module.exports = router;

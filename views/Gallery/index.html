@@ -15,6 +15,12 @@ Montessori"
     <link rel="stylesheet" href="blackstar.css" media="screen" />
     <link rel="stylesheet" href="./Gallery.css" media="screen" />
     <script
+      src="https://code.jquery.com/jquery-3.6.4.slim.min.js"
+      integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw="
+      crossorigin="anonymous"
+      defer=""
+    ></script>
+    <script
       class="u-script"
       type="text/javascript"
       src="jquery.js"
@@ -323,9 +329,35 @@ Montessori"
       class="u-clearfix u-container-align-center-md u-white u-section-1"
       id="carousel_a0cc"
     >
+      <!-- <script type="text/javascript" src="./Gallery.js"></script> -->
       <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
         <h1 class="u-align-center u-text u-text-default u-text-1">Gallery</h1>
-        <section class="container gallery"><div id="root"></div></section>
+        <noscript>You need to activate javacript to view this</noscript>
+        <section class="container gallery">
+          <div id="root"></div>
+          <script type="module">
+            console.log("Hello World");
+            fetch("/api/images/images-list")
+              .then((res) => res.json())
+              .then(({ images_list }) => {
+                console.log(images_list);
+                // console.log($);
+                const root = $("#root");
+                if (root) {
+                  const img_list = images_list
+                    .map((src) => {
+                      var img = new Image();
+                      img.src = src;
+
+                      return img;
+                    })
+                    .forEach((element) => {
+                      document.getElementById("root").appendChild(element);
+                    });
+                }
+              });
+          </script>
+        </section>
 
         <a
           href="/Home/#carousel_e94e"

@@ -5,10 +5,21 @@ const images = require("../../images_list");
 const { blogList } = require("./blogs_list");
 const bodyParser = require("body-parser");
 const { LogPath } = require("../../settings");
+const { valid_asset_Files } = require("../utils/fetchFiles");
 
 router.use(bodyParser.json(), bodyParser.urlencoded({ extended: true }));
 
 router.get("/blogs/blogs-list", (req, res) => res.send(blogList));
+router.get("/images/images-list",(req,res)=>{
+  res.send({
+    images_list:[...valid_asset_Files["jpeg"],...valid_asset_Files["jpg"],...valid_asset_Files["png"]].filter((v)=>{
+      if(typeof v != 'string') return false;
+      if(String(v).includes("810_")) return true;
+  
+      return false
+  })
+  })
+})
 router.get("/images/:id", (req, res) => {
   const { id } = req.params;
 
