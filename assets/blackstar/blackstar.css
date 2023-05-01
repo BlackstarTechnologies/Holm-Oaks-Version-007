@@ -661,32 +661,6 @@ video {
   transition-duration: 150ms;
 }
 
-.container {
-  display: flex;
-  position: relative;
-  align-items: center;
-  justify-content: center;
-  min-height: 300px;
-}
-
-.container #root{
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.gallery-image {
-  max-width:500px;
-  margin: 2rem;
-  max-height:500px;
-}
-
-.gallery-image:hover{
-  scale: 1.25x;
-}
-
 .blackstar-1{
   display: flex;
   flex-direction: column;

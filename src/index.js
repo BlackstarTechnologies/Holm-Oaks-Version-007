@@ -51,6 +51,7 @@ router.get("/*", (req, res, callNext) => {
       case "core-values":
       case "about-us":
       case "images":
+      case "404":
       case "gallery":
         a_002++;
         break;
@@ -83,6 +84,8 @@ router.get("/*", (req, res, callNext) => {
 //   // callNext()
 // })
 router.use("/api", require("./api"));
+
+
 
 module.exports = router;
 
