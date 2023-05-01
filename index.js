@@ -7,8 +7,10 @@ const app = express();
 const port = process.env.PORT;
 
 app.use(require("./src"));
+
 app.use("/", express.static("views"));
 
+app.use("/Blog*",express.static("views/build"))
 // app.use("/", express.static("assets"));
 app.get("/", (req, res) => res.redirect("/Home/"));
 

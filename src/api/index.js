@@ -9,7 +9,7 @@ const { valid_asset_Files } = require("../utils/fetchFiles");
 
 router.use(bodyParser.json(), bodyParser.urlencoded({ extended: true }));
 
-router.get("/blogs/blogs-list", (req, res) => res.send(blogList));
+router.get("/blogs/blogs-list", (req, res) => res.send([])); // blogList
 router.get("/images/images-list",(req,res)=>{
   res.send({
     images_list:[...valid_asset_Files["jpeg"],...valid_asset_Files["jpg"],...valid_asset_Files["png"]].filter((v)=>{
