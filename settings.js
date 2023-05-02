@@ -1,6 +1,6 @@
 module.exports = {
   invalid_dirs: [".git", ".vscode", "node_modules", "react_views"],
-  valid_dirs: ["assets", "views"],
+  valid_dirs: ["assets", "views","static"],
   invalid_exts: [
     ".bat",
     ".env",

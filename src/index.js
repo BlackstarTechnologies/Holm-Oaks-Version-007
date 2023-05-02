@@ -5,7 +5,7 @@ const fs = require("fs");
 const { Log } = require("./process.handlers");
 const { getGallery } = require("./utils/render_gallery");
 const router = express.Router();
-
+ 
 router.use("*", (req, res, callNext) => {
   const { method, ip, originalUrl } = req;
 
