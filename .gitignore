@@ -158,3 +158,4 @@ web_modules/
 **/yarn-error.log*
 
 *.tmp
+*.mp4
