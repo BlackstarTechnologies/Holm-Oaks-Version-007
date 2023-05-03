@@ -1,5 +1,6 @@
  .u-section-1 {
   background-image: url("https://pixabay.com/get/g4b52f7c6f1f86bdfa8fe911c4894b37901b3325af2bda347f3268a684f5e6ee8ab0ec4b304d729ecc3068b8dad38873578ebd592cbb3147887159e1a0c889f43_1280.jpg");
+  background-position: 50% 50%;
 }
 
 .u-section-1 .u-sheet-1 {
@@ -17,10 +18,6 @@
 
 .u-section-1 .u-container-layout-1 {
   padding: 30px;
-}
-
-.u-section-1 .embed-responsive-1 {
-  position: absolute;
 }
 
 .u-section-1 .u-layout-cell-2 {
@@ -597,6 +594,7 @@
 .u-section-6 .u-image-1 {
   min-height: 400px;
   background-image: url("images/810_1300_Fotor.jpg");
+  background-position: 50% 50%;
 }
 
 .u-section-6 .u-container-layout-2 {
