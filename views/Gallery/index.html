@@ -341,29 +341,41 @@ Montessori"
         <h1 class="u-align-center u-text u-text-default u-text-1">Gallery</h1>
         <noscript>You need to activate javacript to view this</noscript>
         <section class="container gallery">
-          <div id="root"></div>
-          <script type="module">
-            console.log("Hello World");
-            fetch("/api/images/images-list")
-              .then((res) => res.json())
-              .then(({ images_list }) => {
-                console.log(images_list);
-                // console.log($);
-                const root = $("#root");
-                if (root) {
-                  const img_list = images_list
-                    .map((src) => {
-                      var img = new Image();
-                      img.src = src;
-                      img.classList.add("gallery-image");
-                      return img;
-                    })
-                    .forEach((element) => {
-                      document.getElementById("root").appendChild(element);
-                    });
-                }
-              });
-          </script>
+          <div id="pre-load"></div>
+          <div id="root">
+            <img
+              src="./assets/images/810_0982_Fotor.jpg"
+              class="gallery-image"
+            /><img
+              src="./assets/images/810_1007_Fotor.jpg"
+              class="gallery-image"
+            /><img
+              src="./assets/images/810_1074_Fotor.jpg"
+              class="gallery-image"
+            /><img
+              src="./assets/images/810_1112_Fotor.jpg"
+              class="gallery-image"
+            /><img
+              src="./assets/images/810_1115_Fotor.jpg"
+              class="gallery-image"
+            /><img
+              src="./assets/images/810_1189_Fotor.jpg"
+              class="gallery-image"
+            /><img
+              src="./assets/images/810_1213_Fotor.jpg"
+              class="gallery-image"
+            /><img
+              src="./assets/images/810_1222_Fotor.jpg"
+              class="gallery-image"
+            /><img
+              src="./assets/images/810_1223_Fotor.jpg"
+              class="gallery-image"
+            /><img
+              src="./assets/images/810_1235_Fotor.jpg"
+              class="gallery-image"
+            />
+          </div>
+          <script type="module" src="./Gallery.js"></script>
         </section>
 
         <a

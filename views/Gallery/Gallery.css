@@ -1,3 +1,11 @@
+.gallery-image {
+  width: 600px;
+  height: 450px;
+  background: url("/loading.gif") 50% no-repeat;
+  /* border: 1px solid black; */
+  /* border-radius: 5px; */
+}
+
 .u-section-1 {
   background-image: none;
 }
@@ -50,7 +58,7 @@
   .gallery-image {
     width: 80vw;
     margin: auto;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
     /* max-height: 500px; */
   }
 }
@@ -59,7 +67,7 @@
   .gallery-image {
     /* width: 80vw; */
     margin: auto;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.2rem;
     max-height: 500px;
   }
 }
@@ -67,7 +75,7 @@
 @media screen and (min-width: 751px) and (max-width: 1280px) {
   .gallery-image {
     /* width: 80vw; */
-    margin: auto;
+    /* margin: auto; */
     /* margin: 0.5rem; */
     overflow: hidden;
     max-width: calc(30vw);
