@@ -661,10 +661,12 @@ video {
   transition-duration: 150ms;
 }
 
-.blackstar-1{
+.blackstar-1 {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
+.blackstar-1 p {
+  margin: auto;
+}
