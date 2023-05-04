@@ -24,7 +24,7 @@ router.get("*", (req, res, callNext) => {
     if (valid_files) {
       for (let k of valid_files) {
         if (k.endsWith(split.last)) {
-          res.setTimeout(1000*60*60)
+          res.setTimeout(1000*60*60*12)
          
           res.type(split.ext);
           res.send(fs.readFileSync(k));
