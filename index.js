@@ -1,11 +1,13 @@
 require("./src/process.handlers");
 const express = require("express");
+const cors = require("cors")
 const fs = require("fs");
 const { Log } = require("./src/process.handlers");
 const app = express();
 
 const port = process.env.PORT;
 
+app.use(cors())
 app.use(require("./src"));
 
 
