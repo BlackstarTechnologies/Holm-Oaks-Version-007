@@ -670,3 +670,7 @@ video {
 .blackstar-1 p {
   margin: auto;
 }
+
+#root {
+  background: url("/loading.gif") 50% no-repeat;
+}
