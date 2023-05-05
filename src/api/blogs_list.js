@@ -37,7 +37,7 @@ module.exports = {
     },
     {
       id: 2,
-      title: "THE MONTESSORI WAY OF EDUCATION",
+      title: "PLANES OF DEVELOPEMENT IN CHILDREN AND YOUTHS",
       category: "Montessori",
       subCategory: ["Education", "Philosophy", "Method"],
       description: [
