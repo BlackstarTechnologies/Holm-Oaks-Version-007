@@ -157,19 +157,6 @@
   padding: 20px;
 }
 
-.u-section-1 .u-carousel-item-12 {
-  margin-right: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  --effect-scale: 0.25;
-  transition-duration: 3.5s;
-}
-
-.u-section-1 .u-over-slide-12 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2));
-  padding: 20px;
-}
-
 .u-section-1 .u-carousel-control-1 {
   position: absolute;
   left: 10px;
