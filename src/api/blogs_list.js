@@ -26,10 +26,49 @@ module.exports = {
           ],
         },
       ],
-      authorName: "Mrs Joy Oyemo",
+      authorName: "Joy Maiywa",
       authorAvatar: "/assets/images/author.jpg",
       createdAt: "May 05, 2023",
-      cover: "/assets/images/blog_001_image.png",
+      cover: {
+        src: "/assets/images/blog_001_image.png",
+        description: "",
+        alt: "",
+      },
+    },
+    {
+      id: 2,
+      title: "THE MONTESSORI WAY OF EDUCATION",
+      category: "Montessori",
+      subCategory: ["Education", "Philosophy", "Method"],
+      description: [
+        // {
+        //   title: "",
+        //   content:
+        //     "(Adopted from themontessorifamily :  https://themontessorifamily.com/montessori-theory-4-planes-of-development-explained/)",
+        // },
+        {
+          title: "PLANES OF DEVELOPEMENT IN CHILDREN AND YOUTHS",
+          content: [
+            "One of the ways the Montessori method aims to achieve holistic development of a child is by considering what plane of development the child is at. These planes of development are based on studies that have been made on the growth and development of children. ",
+            "In Montessori, there are 4 distinct periods of development in children (planes of development): birth – 6 years, 6-12 years, 12-18 years and 18-24 years. Children and youth in each plane of development are drawn to different activities and skills. If they are given opportunities to explore, learn and practice those skills, they can make tremendous progress in their education.",
+
+            "The Montessori method aspires to make maximum use of these planes of development by having its school programs incorporate these goals:",
+            ">Introducing fine motor skills early, which will later be needed for academic subjects.",
+            ">Providing children with the skills and opportunities that match their interests and will result in their growth, development and learning. ",
+            ">Not focusing on changing a child’s behavior but understanding and developing it and then building on positive inclinations.",
+            ">Adopting concrete ways in its programs where children can show respect, implement peaceful practices, and cultivate an awareness of personal responsibility.",
+          ],
+        },
+      ],
+      authorName: "Joy Maiywa",
+      authorAvatar: "/assets/images/author.jpg",
+      createdAt: "May 05, 2023",
+      cover: {
+        src: "/assets/images/blog_002_image.png",
+        description:
+          "Adopted from themontessorifamily :  https://themontessorifamily.com/montessori-theory-4-planes-of-development-explained/",
+        alt: "",
+      },
     },
   ],
 };
