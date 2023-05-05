@@ -10,7 +10,8 @@ const { MessageFormLog } = require("../process.handlers");
 
 router.use(bodyParser.json(), bodyParser.urlencoded({ extended: true }));
 
-router.get("/blogs/blogs-list", (req, res) => res.send([])); // blogList
+router.get("/Blogs/blogs-list", (req, res) => res.send(blogList)); // blogList
+router.get("/blogs/blogs-list", (req, res) => res.send(blogList)); // blogList
 router.get("/images/images-list", (req, res) => {
   res.send({
     images_list: [

@@ -1,6 +1,6 @@
 module.exports = {
   invalid_dirs: [".git", ".vscode", "node_modules", "react_views"],
-  valid_dirs: ["assets", "views","static"],
+  valid_dirs: ["assets", "views", "static", "images", "js", "css"],
   invalid_exts: [
     ".bat",
     ".env",
@@ -12,5 +12,5 @@ module.exports = {
     ".tmp",
   ],
   invalid_files: [".htaccess", ".gitignore", ".npmrc", ".env"],
-  LogPath : "./src/logs/",
+  LogPath: "./src/logs/",
 };

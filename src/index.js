@@ -5,7 +5,7 @@ const fs = require("fs");
 const { Log } = require("./process.handlers");
 const { getGallery } = require("./utils/render_gallery");
 const router = express.Router();
- 
+
 router.use("*", (req, res, callNext) => {
   const { method, ip, originalUrl } = req;
 
@@ -19,13 +19,17 @@ router.use("*", (req, res, callNext) => {
 router.get("*", (req, res, callNext) => {
   const { originalUrl } = req;
   const split = splitUrl(originalUrl);
+  if (split.ext == "css") console.log(split);
+  if (split.ext == "js") console.log(split);
   if (!originalUrl.includes("index")) {
     let valid_files = filesList.valid_asset_Files[split.ext];
     if (valid_files) {
       for (let k of valid_files) {
         if (k.endsWith(split.last)) {
-          res.setTimeout(1000*60*60*12)
-         
+          if (split.ext == "css") console.log(`${split.last} found`);
+          if (split.ext == "js") console.log(`${split.last} found`);
+          res.setTimeout(1000 * 60 * 60 * 12);
+
           res.type(split.ext);
           res.send(fs.readFileSync(k));
           return;
@@ -75,7 +79,6 @@ router.get("/*", (req, res, callNext) => {
   }
 });
 
-
 // router.get("/Gallery/", (req,res, callNext)=>{
 //   res.setTimeout(1000*60*60)
 //   res.type("html")
@@ -86,7 +89,4 @@ router.get("/*", (req, res, callNext) => {
 // })
 router.use("/api", require("./api"));
 
-
-
 module.exports = router;
-
