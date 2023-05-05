@@ -7,7 +7,7 @@ module.exports = {
       subCategory: ["Education", "Philosophy", "Method"],
       description: [
         {
-          title: "THE MONTESSORI WAY OF EDUCATION",
+          title: "",
           content: [
             "What is unique in the Montessori way of education is that it allows the children to approach the different academic subjects by manipulative materials. Montessori therefore offers children a hands-on learning experience. Many traditional programs teach children using two senses – seeing and hearing. For example, when the teacher is showing the children the letters of the alphabet, the teacher will show the children the shape of the alphabet letter (seeing) and tell them the sound of the letter (hearing). In Montessori, children are provided with an extra sensorial experience to their learning based on the evidence that children grasp concepts more easily when it appeals to as many of their senses as possible (sight, touch, taste, hearing and smell). Using the example mentioned above, a Montessori teacher uses Montessori sandpaper letters to give the children an extra tactile experience to their learning and this enables them to learn more easily.",
             "There is a lot of evidence from neuroscience that shows a strong connection between the brain and the hands. The hands give information to the brain, the brain receives the information and guides the hands in a continuous cycle that results in the development of the intellect. ",
@@ -47,7 +47,7 @@ module.exports = {
         //     "(Adopted from themontessorifamily :  https://themontessorifamily.com/montessori-theory-4-planes-of-development-explained/)",
         // },
         {
-          title: "PLANES OF DEVELOPEMENT IN CHILDREN AND YOUTHS",
+          title: "",
           content: [
             "One of the ways the Montessori method aims to achieve holistic development of a child is by considering what plane of development the child is at. These planes of development are based on studies that have been made on the growth and development of children. ",
             "In Montessori, there are 4 distinct periods of development in children (planes of development): birth – 6 years, 6-12 years, 12-18 years and 18-24 years. Children and youth in each plane of development are drawn to different activities and skills. If they are given opportunities to explore, learn and practice those skills, they can make tremendous progress in their education.",
