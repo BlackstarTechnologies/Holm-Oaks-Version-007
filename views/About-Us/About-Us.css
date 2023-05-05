@@ -388,7 +388,6 @@
 
   .u-section-2 .u-repeater-1 {
     grid-gap: 10px 10px;
-    grid-auto-columns: 100%;
   }
 } .u-section-3 {
   min-height: 500px;
@@ -584,9 +583,9 @@
   }
 
   .u-section-3 .u-text-4 {
-    margin-top: 37px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-top: 39px;
+    margin-left: 25px;
+    margin-right: 25px;
   }
 
   .u-section-3 .u-image-1 {
@@ -714,21 +713,22 @@
   }
 
   .u-section-4 .u-text-1 {
-    margin-left: 10px;
-    margin-right: 10px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .u-section-4 .u-text-2 {
     font-size: 1.5rem;
-    width: auto;
-    margin-right: 239px;
-    margin-left: 10px;
+    width: 191px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .u-section-4 .u-text-3 {
     margin-top: 0;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 24px;
+    margin-right: 24px;
   }
 } .u-section-5 {
   background-image: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("images/trees-g7a4bd8a93_1280.jpg");
@@ -784,18 +784,20 @@
 
 @media (max-width: 575px) {
   .u-section-5 .u-sheet-1 {
-    min-height: 659px;
+    min-height: 675px;
   }
 
   .u-section-5 .u-text-1 {
-    margin-top: 60px;
+    margin-top: 62px;
     margin-left: -23px;
     margin-right: -23px;
   }
 
   .u-section-5 .u-text-2 {
     width: auto;
-    margin: 91px -34px 58px -23px;
+    margin-top: 25px;
+    margin-left: -7px;
+    margin-right: -7px;
   }
 }.u-section-6 .u-sheet-1 {
   min-height: 862px;
