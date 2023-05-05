@@ -1,5 +1,5 @@
- .u-section-1 {
-  background-image: url("https://pixabay.com/get/g4b52f7c6f1f86bdfa8fe911c4894b37901b3325af2bda347f3268a684f5e6ee8ab0ec4b304d729ecc3068b8dad38873578ebd592cbb3147887159e1a0c889f43_1280.jpg");
+.u-section-1 {
+  background-image: url("/beautiful-flowers-g4b52f7c6f_1280.jpg");
   background-position: 50% 50%;
 }
 
@@ -189,7 +189,8 @@
   .u-section-1 .u-btn-3 {
     margin-top: 14px;
   }
-}.u-section-2 .u-sheet-1 {
+}
+.u-section-2 .u-sheet-1 {
   min-height: 754px;
 }
 
@@ -389,7 +390,8 @@
   .u-section-2 .u-repeater-1 {
     grid-gap: 10px 10px;
   }
-} .u-section-3 {
+}
+.u-section-3 {
   min-height: 500px;
 }
 
@@ -438,7 +440,7 @@
 }
 
 @media (max-width: 1199px) {
-   .u-section-3 {
+  .u-section-3 {
     min-height: 491px;
   }
 
@@ -467,7 +469,7 @@
 }
 
 @media (max-width: 991px) {
-   .u-section-3 {
+  .u-section-3 {
     min-height: 454px;
   }
 
@@ -499,7 +501,7 @@
 }
 
 @media (max-width: 767px) {
-   .u-section-3 {
+  .u-section-3 {
     min-height: 938px;
   }
 
@@ -550,7 +552,7 @@
 }
 
 @media (max-width: 575px) {
-   .u-section-3 {
+  .u-section-3 {
     min-height: 824px;
   }
 
@@ -591,7 +593,8 @@
   .u-section-3 .u-image-1 {
     min-height: 347px;
   }
-} .u-section-4 {
+}
+.u-section-4 {
   min-height: 406px;
 }
 
@@ -634,7 +637,7 @@
 }
 
 @media (max-width: 1199px) {
-   .u-section-4 {
+  .u-section-4 {
     min-height: 451px;
   }
 
@@ -648,7 +651,7 @@
 }
 
 @media (max-width: 991px) {
-   .u-section-4 {
+  .u-section-4 {
     min-height: 399px;
   }
 
@@ -662,7 +665,7 @@
 }
 
 @media (max-width: 767px) {
-   .u-section-4 {
+  .u-section-4 {
     min-height: 743px;
   }
 
@@ -690,7 +693,7 @@
 }
 
 @media (max-width: 575px) {
-   .u-section-4 {
+  .u-section-4 {
     min-height: 789px;
   }
 
@@ -730,8 +733,14 @@
     margin-left: 24px;
     margin-right: 24px;
   }
-} .u-section-5 {
-  background-image: linear-gradient(0deg, rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("images/trees-g7a4bd8a93_1280.jpg");
+}
+.u-section-5 {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("images/trees-g7a4bd8a93_1280.jpg");
   background-position: 50% 50%;
 }
 
@@ -799,7 +808,8 @@
     margin-left: -7px;
     margin-right: -7px;
   }
-}.u-section-6 .u-sheet-1 {
+}
+.u-section-6 .u-sheet-1 {
   min-height: 862px;
 }
 
@@ -929,7 +939,8 @@
     width: 340px;
     margin-top: 20px;
   }
-}.u-section-7 .u-sheet-1 {
+}
+.u-section-7 .u-sheet-1 {
   min-height: 118px;
 }
 
